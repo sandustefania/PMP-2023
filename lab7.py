@@ -11,7 +11,7 @@ df.dropna(subset=['horsepower'], inplace=True)
 df.reset_index(drop=True, inplace=True)
 print(df)
 
-# au fost sterse 6 coloane in care valorile nu erau numerice
+# au fost sterse 6 linii in care valorile nu erau numerice
 
 plt.scatter(df['horsepower'], df['mpg'], alpha=0.5)
 plt.xlabel('horsepower')
