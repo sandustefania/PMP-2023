@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 import arviz as az
 
 np.random.seed(1)
-# Funcție pentru efectuarea experimentului de aruncare a două monede de 10 ori
 def arunca_doua_monede():
     aruncari = np.random.choice(['s', 'b'], size=2, p=[0.3, 0.7])
     rezultat = ''.join(aruncari)
@@ -28,12 +27,11 @@ for i in range(100):
         bb += 1
 
 
-# Creăm un grafic pentru distribuția rezultatelor
 etichete = ['ss', 'sb', 'bs', 'bb']
 valori = [ss, sb, bs, bb]
 
 plt.bar(etichete, valori)
 plt.xlabel('Rezultate')
-plt.ylabel('Număr de apariții')
-plt.title('Distribuția rezultatelor în 100 de experimente')
+plt.ylabel('Numar de aparitii')
+plt.title('Distributia rezultatelor în 100 de experimente')
 plt.show()
